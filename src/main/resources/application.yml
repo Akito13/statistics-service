@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: "statistics"
+  config:
+    import: "configserver:http://localhost:8071"
+  cloud:
+    config:
+      name: common, kafka-common, jwt-common, statistics
